@@ -1,4 +1,4 @@
-<h1>This project control a 7-segment display from a potentiometer, cleaning the display with a push button</h1>
+<h1>This project control a 7-segment display from a potentiometer and cleaning the display with a push button</h1>
 
 *<h3>Materials:</h3>*
   <li>7-segment display</li>
