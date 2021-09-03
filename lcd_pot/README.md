@@ -5,4 +5,4 @@
   <li>2 ohmic resistors</li>
   <li>1 potentiometer</li>
 <br>
-<img style="box-shadow: 2px 2px 2px red;" src="images/tinkercad_project.png">
+<img src="images/tinkercad_project.png">
