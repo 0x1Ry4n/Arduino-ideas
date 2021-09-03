@@ -1,4 +1,6 @@
-*<h2>This project uses:</h2>*
+<h1>This project control a 7-segment display from a potentiometer, cleaning the display with a push button</h1>
+
+*<h3>This project uses:</h3>*
   <li>7-segment display</li>
   <li>1 push button</li>
   <li>Jumpers</li>
