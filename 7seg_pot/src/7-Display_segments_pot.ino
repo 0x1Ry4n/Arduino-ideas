@@ -30,7 +30,7 @@ void loop() {
 	Display display;  
 	
 	int potValue =  analogRead(ANALOG); // 
-  	int mapValue = map(potValue, 0, 1023, 0, 9); // Map the received analog values to a range between 0 and 9 values 
+  	int mapValue = map(potValue, 0, 1023, 0, 9); // Map the received analog values to a range between 0 and 9 states 
 	
 	if(digitalRead(PUSH_BUTTON) == HIGH){ // If push_button switched on, clean 7-seg display
 		display.Standard(0, 0, 0, 0, 0, 0, 0);
