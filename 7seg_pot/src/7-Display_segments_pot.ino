@@ -7,13 +7,14 @@
 #define pinF 9 // pin F display
 #define pinG 10 // pin G display
 #define PUSH_BUTTON 13 // digital port of the push_button
+#define _SIZE 7
 typedef unsigned int u_int; // alias for unsigned int 
 
-const u_int DisplayPins[] ={pinA, pinB, pinC, pinD, pinE, pinF, pinG}; // pins display in a vector
+const u_int DisplayPins[] = {pinA, pinB, pinC, pinD, pinE, pinF, pinG}; // pins display in a vector
 
 class Display { 
 	private: 
-  		u_int values[7]; // 7 values. "0 or 1" to 7 digital ports
+  		u_int values[_SIZE]; // 7 values. "0 or 1" to 7 digital ports
 	public: 
 		void Standard(u_int a, u_int b, u_int c, u_int d, u_int e, u_int f, u_int g); 
 };
@@ -51,11 +52,11 @@ void loop() {
 }
 
 void Display :: Standard(u_int a, u_int b, u_int c, u_int d, u_int e, u_int f, u_int g) { // Display class member
-	u_int tempValues[7] = {a, b, c, d, e, f, g}; // Receive values as parameter and keep it on a temp array, "tempValues"
+	u_int tempValues[_SIZE] = {a, b, c, d, e, f, g}; // Receive values as parameter and keep it on a temp array, "tempValues"
 
-	for(int j = 0; j < 7; j++) // Loop to keep temp values as parameter inside on private "values" variable of class Display
+	for(int j = 0; j < _SIZE; j++) // Loop to keep temp values as parameter inside on private "values" variable of class Display
 		this->values[j] = tempValues[j]; 
 	
-	for(int i = 0; i < sizeof(values); i++) // Loop to cycle through the 7-seg display pins and the values of the private "values" variable of the Display class
+	for(int i = 0; i < _SIZE; i++) // Loop to cycle through the 7-seg display pins and the values of the private "values" variable of the Display class
 		digitalWrite(DisplayPins[i], this->values[i]); // I connect the pins for each value traveled
 }
