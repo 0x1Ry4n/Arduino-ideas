@@ -16,7 +16,7 @@ class Display {
 	private: 
   		u_int values[_SIZE]; // 7 values. "0 or 1" to 7 digital ports
 	public: 
-		void Standard(u_int a, u_int b, u_int c, u_int d, u_int e, u_int f, u_int g); 
+		void Pattern(u_int a, u_int b, u_int c, u_int d, u_int e, u_int f, u_int g); 
 };
 
 
@@ -51,7 +51,7 @@ void loop() {
 	}
 }
 
-void Display :: Standard(u_int a, u_int b, u_int c, u_int d, u_int e, u_int f, u_int g) { // Display class member
+void Display :: Pattern(u_int a, u_int b, u_int c, u_int d, u_int e, u_int f, u_int g) { // Display class member
 	u_int tempValues[_SIZE] = {a, b, c, d, e, f, g}; // Receive values as parameter and keep it on a temp array, "tempValues"
 
 	for(int j = 0; j < _SIZE; j++) // Loop to keep temp values as parameter inside on private "values" variable of class Display
