@@ -30,22 +30,22 @@ void setup() {
 void loop() {
 	Display display;  
 	
-	int potValue =  analogRead(ANALOG); // 
+	int potValue =  analogRead(ANALOG); // Collect analogic value of potentiometer
   	int mapValue = map(potValue, 0, 1023, 0, 9); // Map the received analog values to a range between 0 and 9 states 
 	
 	if(digitalRead(PUSH_BUTTON) == HIGH){ // If push_button switched on, clean 7-seg display
-		display.Standard(0, 0, 0, 0, 0, 0, 0);
+		display.Pattern(0, 0, 0, 0, 0, 0, 0);
 	}else{
 		switch(mapValue) {
-			case 1: display.Standard(1, 1, 0, 1, 0, 1, 1);break; // Conditions for each value selected on the potentiometer
-			case 2: display.Standard(0, 1, 1, 1, 1, 1, 0);break;
-			case 3: display.Standard(1, 1, 1, 1, 1, 0, 0);break;
-			case 4: display.Standard(0, 0, 0, 0, 1, 1, 1);break;
-			case 5: display.Standard(1, 0, 1, 0, 1, 0, 1);break;
-			case 6: display.Standard(0, 0, 0, 0, 0, 1, 1);break;
-			case 7: display.Standard(0, 1, 1, 1, 1, 1, 1);break;
-			case 8: display.Standard(1, 1, 1, 1, 1, 0, 0);break;
-			case 9: display.Standard(0, 1, 1, 0, 0, 1, 1);break;
+			case 1: display.Pattern(1, 1, 0, 1, 0, 1, 1);break; // Conditions for each value selected on the potentiometer
+			case 2: display.Pattern(0, 1, 1, 1, 1, 1, 0);break;
+			case 3: display.Pattern(1, 1, 1, 1, 1, 0, 0);break;
+			case 4: display.Pattern(0, 0, 0, 0, 1, 1, 1);break;
+			case 5: display.Pattern(1, 0, 1, 0, 1, 0, 1);break;
+			case 6: display.Pattern(0, 0, 0, 0, 0, 1, 1);break;
+			case 7: display.Pattern(0, 1, 1, 1, 1, 1, 1);break;
+			case 8: display.Pattern(1, 1, 1, 1, 1, 0, 0);break;
+			case 9: display.Pattern(0, 1, 1, 0, 0, 1, 1);break;
 				
 		}
 	}
