@@ -1,4 +1,4 @@
-<h1>This project control a micro servo from a potentiometer and set colors in a rgb led</h1>
+<h1>Control a micro servo from a potentiometer and set colors in a rgb led</h1>
 
 *<h3>Materials:</h3>*
   <li>1 micro servo</li>
