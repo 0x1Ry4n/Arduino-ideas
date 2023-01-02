@@ -4,8 +4,8 @@
 *<h3>Materials:</h3>*
   <li>7-segment display</li>
   <li>1 push button</li>
-  <li>Jumpers</li>
-  <li>2 ohmic resistors</li>
   <li>1 potentiometer</li>
+  <li>Some jumpers</li>
+  <li>2 ohmic resistors</li>
 <br>
 <img src="images/tinkercad_project.png">
